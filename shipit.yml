@@ -26,3 +26,7 @@ tasks:
       - echo Failover $POD_ID
     variables:
       - name: POD_ID
+
+kubernetes:
+  namespace: junk-production
+  context: tier4
