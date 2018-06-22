@@ -28,5 +28,7 @@ tasks:
       - name: POD_ID
 
 kubernetes:
-  namespace: junk-production
+  namespace: cloud-rails-lhm-example-production
   context: tier4
+  rails_docker_image: gcr.io/shopify-docker-images/apps/production/cloud-rails-lhm-example
+  lhm_runner_template: config/deploy/lhm/lhm.yml
